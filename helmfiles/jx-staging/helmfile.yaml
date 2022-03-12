@@ -6,11 +6,17 @@ environments:
 repositories:
 - name: jxgh
   url: https://jenkins-x-charts.github.io/repo
+- name: dev
+  url: http://chartmuseum-jx.35.239.154.70.nip.io
 releases:
 - chart: jxgh/jx-verify
   name: jx-verify
   namespace: jx-staging
   values:
   - jx-values.yaml
+- chart: dev/origins-cms
+  version: 0.0.6
+  name: origins-cms
+  namespace: jx-staging
 templates: {}
 renderedvalues: {}
