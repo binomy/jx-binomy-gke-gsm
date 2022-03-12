@@ -8,6 +8,7 @@ data:
     in_repo_config:
       enabled:
         binomy/jx-binomy-gke-gsm: true
+        binomy/origins-cms: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -20,6 +21,7 @@ data:
         skip-unknown-contexts: false
       merge_method:
         binomy/jx-binomy-gke-gsm: merge
+        binomy/origins-cms: merge
       queries:
       - labels:
         - approved
@@ -31,6 +33,7 @@ data:
         - needs-rebase
         repos:
         - binomy/jx-binomy-gke-gsm
+        - binomy/origins-cms
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +44,7 @@ data:
         - needs-rebase
         repos:
         - binomy/jx-binomy-gke-gsm
+        - binomy/origins-cms
       target_url: http://lighthouse-jx.35.239.154.70.nip.io/merge/status
 kind: ConfigMap
 metadata:
