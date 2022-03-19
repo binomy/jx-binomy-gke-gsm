@@ -27,12 +27,13 @@ spec:
   - key: staging
   - key: production
   ingress:
-    domain: 35.239.154.70.nip.io
+    domain: pluto.binomy.io
+    externalDNS: true
     kind: ingress
     namespaceSubDomain: -jx.
     tls:
-      email: ""
-      enabled: false
+      email: tech@binomy.io
+      enabled: true
       production: true
   kuberhealthy: true
   pipelineUser:
